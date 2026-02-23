@@ -1,32 +1,175 @@
 {
-    "home_page": {
-        "status_card": {
-            "running": "작동중✨",
-            "stopped": "중지됨 💤",
-            "error": "오류 ~",
-            "daemonPID": "데몬 PID: {pid}",
-            "daemon_inactive": "서비스 비활성",
-            "loading_daemon": "잠시만 기다려 주세요…"
-        },
-        "info_card": {
-            "profile": "현재 프로필",
-            "androidSDK": "Android SDK",
-            "kernel": "커널",
-            "chipset": "칩셋"
-        },
-        "support_button": {
-            "title": "후원하기",
-            "description": "Encore Tweaks는 지금도, 앞으로도 여러분과 모두를 위해 항상 무료입니다. 다만 기부를 통해 응원의 마음을 표현해 주실 수 있습니다."
-        }
+  "home_page": {
+    "title": "Encore Tweaks",
+
+    "status_card": {
+      "running": "실행중 ✨",
+      "stopped": "중지됨 💤",
+      "error": "오류 ~",
+      "daemonPID": "데몬 PID: {pid}",
+      "daemon_inactive": "서비스 비활성화",
+      "loading_daemon": "잠시 기다려 주세요…"
     },
-    "game_settings": {
-        "dnd_mode_description": "게임 중 알림과 전화 차단"
+
+    "info_card": {
+      "module": "Encore Tweaks",
+      "profile": "현재 프로필",
+      "kernel": "커널",
+      "chipset": "칩셋",
+      "androidSDK": "안드로이드 SDK"
     },
-    "language_selection": {
-        "title": "언어",
-        "follow_system": "시스템 설정 따르기"
+
+    "support_button": {
+      "title": "후원해주세요",
+      "description": "Encore Tweaks는 앞으로도 무료로 지원될 예정이지만 후원을 통해 이 프로젝트에 기여하실 수도 있습니다."
     },
-    "log_level_selection": {
-        "title": "로그 수준"
+
+    "learn_encore": {
+      "title": "Encore 사용법",
+      "description": "Encore Tweaks의 사용법과 기능들을 확인합니다."
     }
+  },
+
+  "games_page": {
+    "title": "내 게임",
+    "search_placeholder": "앱 검색",
+    "no_apps_found": "앱을 찾지 못했습니다.",
+
+    "badges": {
+      "tweak_enabled": "활성화됨"
+    }
+  },
+
+  "settings_page": {
+    "title": "설정",
+
+    "section": {
+      "preferences": "환경 설정",
+      "system": "시스템",
+      "others": "기타"
+    },
+
+    "lite_mode": {
+      "title": "저전력 모드",
+      "description": "모든 게임에 저전력 모드를 적용합니다."
+    },
+
+    "language": {
+      "title": "언어"
+    },
+
+    "device_mitigation": {
+      "title": "기기 문제 해결",
+      "description": "Encore Tweaks에서 기기별 문제를 해결합니다."
+    },
+
+    "cpu_governor": {
+      "title": "CPU 거버너",
+      "description": "프로필 별 CPU 거버너를 변경합니다."
+    },
+
+    "log_level": {
+      "title": "로그 수준",
+      "description": "Encore Tweaks의 로그를 얼마나 상세히 표시할지 설정합니다."
+    },
+
+    "save_log": {
+      "title": "로그 저장",
+      "description": "Encore Tweaks 로그를 내보냅니다."
+    },
+
+    "create_shortcut": {
+      "title": "바로가기 생성",
+      "description": "Encore Tweaks에 빠르게 접근가능한 바로가기를 홈 화면에 생성합니다."
+    }
+  },
+
+  "game_settings": {
+    "title": "게임 설정",
+    "application": "애플리케이션",
+    "preferences": "환경 설정",
+    "enable_tweaks": "Tweaks 활성화",
+    "lite_mode": "저전력 모드",
+    "lite_mode_description": "성능보다 배터리 수명에 집중되어 있습니다.",
+    "dnd_mode": "방해 금지",
+    "dnd_mode_description": "게임 중 전화 및 알림을 차단합니다.",
+    "launch_app": "실행",
+    "app_info": "앱 정보"
+  },
+
+  "language_selection": {
+    "title": "언어",
+    "follow_system": "시스템 언어"
+  },
+
+  "log_level_selection": {
+    "title": "로그 수준",
+    "level_0": "심각",
+    "level_1": "오류",
+    "level_2": "경고",
+    "level_3": "정보",
+    "level_4": "디버그",
+    "level_5": "상세정보"
+  },
+
+  "lite_mode": {
+    "title": "저전력 모드",
+    "toggle_title": "저전력 모드 적용",
+    "brief": "저전력 모드는 게임 플레이 중 CPU 클럭을 낮춰 발열 및 전력 소비를 줄여줍니다. 이 설정은 활성화 시 모든 게임에 적용됩니다."
+  },
+
+  "device_mitigation": {
+    "title": "Device Mitigation",
+    "toggle_title": "Enable device mitigation",
+    "brief": "Device mitigation disables potentially incompatible tweaks for specific devices. Keep it disabled unless you have problems."
+  },
+
+  "cpu_governor": {
+    "title": "CPU Governor",
+    "default_title": "Default CPU Governor",
+    "default_description": "Applied to balanced and performance profiles when lite mode is active",
+    "powersave_title": "Powersave CPU Governor",
+    "powersave_description": "Exclusively used for the powersave profile",
+    "brief": "CPU governor is an algorithm that dynamically adjusts the processor's frequency in real time, directly affecting system performance and power consumtion.",
+    "modal": {
+      "default_select_title": "Select Default CPU Governor",
+      "powersave_select_title": "Select Powersave CPU Governor",
+      "performance_warning": "Setting the governor to performance will cause overheating and rapid battery drain. Are you sure you want to proceed?",
+      "performance_warning_confirm": "I understand, Apply",
+      "initial_warn": "Please note that Encore Tweaks has automatically configured the optimal CPU Governor. Manual changes are not recommended unless you are an advanced user.",
+      "initial_warn_checkbox": "Don't show this again"
+    }
+  },
+
+  "profiles": {
+    "initializing": "Initializing",
+    "balanced": "Balanced",
+    "powersave": "Powersave",
+    "performance": "Performance"
+  },
+
+  "toast": {
+    "reboot_to_apply": "Reboot your device to apply changes.",
+    "has_shortcut": "Shortcut already exists.",
+    "shortcut_unavailable": "No API available for this feature, use WebUI X to use this feature.",
+    "failed_open_extrenal_browser": "Failed to open external browser.",
+    "success_save_log": "Logs saved successfully at {path}",
+    "failed_save_log": "Failed to save logs."
+  },
+
+  "navigation": {
+    "home": "Home",
+    "games": "Games",
+    "settings": "Settings"
+  },
+
+  "common": {
+    "loading": "Loading",
+    "unknown": "Unknown",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "cancel": "Cancel",
+    "warning": "Warning",
+    "ok": "Okay"
+  }
 }
